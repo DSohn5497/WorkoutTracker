@@ -1,0 +1,57 @@
+
+/* basic reset */
+body, h2, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arials, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 0 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  background: #bababa;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+main {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(150, 171, 250);
+  margin-top: 30px;
+}
