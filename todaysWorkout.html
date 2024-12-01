@@ -20,8 +20,8 @@
   <main>
     <h3>Bench Press</h3>
     <ul>
-      <li><p style="display: inline">Warmup Set  </p><input style="margin-left: 21px" placeholder="weight"> X <input placeholder="reps"></li>
-      <li><p style="display: inline">Working Set #1 </p><input placeholder="weight"> X <input placeholder="reps"></li>
+      <li><p style="display: inline">Warmup Set  </p><input id="warmup" style="margin-left: 21px" placeholder="weight"> X <input placeholder="reps"></li>
+      <li><p style="display: inline">Working Set #1 </p><input id="ws1" placeholder="weight"> X <input placeholder="reps"></li>
       <li><p style="display: inline">Working Set #2 </p><input placeholder="weight"> X <input placeholder="reps"></li>
       <li><p style="display: inline">Working Set #3 </p><input placeholder="weight"> X <input placeholder="reps"></li>
       <li><p style="display: inline">Working Set #4 </p><input placeholder="weight"> X <input placeholder="reps"></li>
@@ -35,11 +35,10 @@
     </ul>
     <h3>Dips</h3>
     <ul>
-      <li><p style="display: inline">Bodyweight Dips  </p><input placeholder="reps"></li>
+      <li><p style="display: inline">Bodyweight only set </p><input placeholder="bodyweight"> X <input placeholder="reps"></li>
       <li><p style="display: inline">Working Set #1 </p><input placeholder="weight"> X <input placeholder="reps"></li>
       <li><p style="display: inline">Working Set #2 </p><input placeholder="weight"> X <input placeholder="reps"></li>
       <li><p style="display: inline">Working Set #3 </p><input placeholder="weight"> X <input placeholder="reps"></li>
-      <li><p style="display: inline">Working Set #4 </p><input placeholder="weight"> X <input placeholder="reps"></li>
     </ul>
     <h3>Shoulder Press</h3>
     <ul>
@@ -48,6 +47,17 @@
       <li><p style="display: inline">Working Set #3 </p><input placeholder="weight"> X <input placeholder="reps"></li>
       <li><p style="display: inline">Working Set #4 </p><input placeholder="weight"> X <input placeholder="reps"></li>
     </ul>
+    <button id="finishButton">Finish Workout!</button>
+    <h2>Workout Summary</h2>
+    <p id="workoutSummary"></p>
+
+    <script>
+      document.getElementById("finishButton").addEventListener("click", function () {
+        const warmupWeight = document.getElementById("warmup").value;
+        document.getElementById("workoutSummary").innerText = `Finished Workout!! You bench pressed ${warmupWeight} lbs!`;
+        // alert("good job finishing the workout!");
+      });
+    </script>
   </main>
 
 
